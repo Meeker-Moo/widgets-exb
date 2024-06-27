@@ -1,0 +1,19 @@
+{
+  "name": "ZoomToScale",
+  "label": "Zoom To Scale",
+  "type": "widget",
+  "version": "1.14.0",
+  "exbVersion": "1.14.0",
+  "author": "GISC",
+  "description": "Zoom To Map Scale is choosed.",
+  "copyright": "",
+  "license": "",
+  "properties": {},
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 800,
+    "height": 500
+  }
+}
