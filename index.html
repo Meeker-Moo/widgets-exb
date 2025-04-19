@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ชื่อหัวฟอร์มของเรา</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fef6f9;
+      margin: 0;
+      padding: 0;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #fff0f6;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #cc7a8b;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #9c5a6b;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #ffffff;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 30px;
+      padding: 12px;
+      width: 100%;
+      background-color: #f79db7;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #f78da7;
+    }
+    iframe {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>ชื่อหัวฟอร์มของเรา</h1>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSe4i6BdAxxKgfaAh3FzGsPyhf53tmQ8TGZ5VDta1fQx7DL0GQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+
+      <!-- ชื่อในวงการ -->
+      <label for="entry.1402022588">ชื่อในวงการ</label>
+      <input type="text" name="entry.1402022588" id="entry.1402022588" required>
+
+      <!-- คำอวยพร -->
+      <label for="entry.786127048">คำอวยพร</label>
+      <textarea name="entry.786127048" id="entry.786127048" rows="4" required></textarea>
+
+      <!-- อัฟโหลดรูปภาพ (text URL) -->
+      <label for="entry.1352060609">อัฟโหลดรูปภาพ</label>
+      <input type="text" name="entry.1352060609" id="entry.1352060609" placeholder="วางลิงก์รูปภาพที่นี่ (ถ้ามี)">
+
+      <button type="submit">ส่งคำตอบ</button>
+    </form>
+
+    <iframe name="hidden_iframe" onload="if(submitted) alert('ส่งคำตอบเรียบร้อยแล้ว!');"></iframe>
+  </div>
+
+  <script>
+    let submitted = false;
+  </script>
+
+</body>
+</html>
